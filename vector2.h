@@ -2,8 +2,8 @@
 // Created by rsalogub on 26.11.19.
 //
 
-#ifndef VECTOR2D_H
-#define VECTOR2D_H
+#ifndef FR_MATH_VECTOR2_H
+#define FR_MATH_VECTOR2_H
 
 #include "types.h"
 
@@ -32,4 +32,4 @@ namespace FRMathDef
     };
 }
 
-#endif //VECTOR2D_H
+#endif //FR_MATH_VECTOR2_H
