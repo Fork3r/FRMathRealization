@@ -5,8 +5,7 @@
 #ifndef FRVECTOR2D_H
 #define FRVECTOR2D_H
 
-#include "FRMath/types.h"
-#include "FRMath/vector2d.h"
+#include "types.h"
 
 namespace FRMathDef
 {
