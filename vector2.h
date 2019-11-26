@@ -2,21 +2,21 @@
 // Created by rsalogub on 26.11.19.
 //
 
-#ifndef FRVECTOR2D_H
-#define FRVECTOR2D_H
+#ifndef VECTOR2D_H
+#define VECTOR2D_H
 
 #include "types.h"
 
 namespace FRMathDef
 {
     using FRMath::pointType;
-    class FRVector2d
+    class Vector2
     {
 
     public:
-        FRVector2d() = default;
+        Vector2() = default;
 
-        FRVector2d(pointType x, pointType y);
+        Vector2(pointType x, pointType y);
 
         inline void setX(pointType x);
 
@@ -32,9 +32,4 @@ namespace FRMathDef
     };
 }
 
-namespace FRMath
-{
-    using Vector2D = FRMathDef::FRVector2d;
-}
-
-#endif //FRVECTOR2D_H
+#endif //VECTOR2D_H

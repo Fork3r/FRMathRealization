@@ -7,9 +7,9 @@ set(CMAKE_CXX_STANDARD 17)
 #include_directories(..)
 
 set(header
-        ${FRMATH_REALIZATION_PATH}/frvector2d.h
+        ${FRMATH_REALIZATION_PATH}/vector2.h
         )
 
 set(src
-        ${FRMATH_REALIZATION_PATH}/frvector2d.cpp
+        ${FRMATH_REALIZATION_PATH}/vector2.cpp
         )
