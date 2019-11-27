@@ -8,8 +8,7 @@ set(CMAKE_CXX_STANDARD 17)
 
 set(header
         ${FRMATH_REALIZATION_PATH}/vector2.h
-        )
-
-set(src
-        ${FRMATH_REALIZATION_PATH}/vector2.cpp
+        ${FRMATH_REALIZATION_PATH}/vector3.h
+        ${FRMATH_REALIZATION_PATH}/vector4.h
+        ${FRMATH_REALIZATION_PATH}/matrix4x4.h
         )
