@@ -5,6 +5,8 @@
 #ifndef FR_MATH_VECTOR4_H
 #define FR_MATH_VECTOR4_H
 
+#include <cassert>
+
 namespace FRMathDef
 {
     template <typename T>
@@ -17,6 +19,18 @@ namespace FRMathDef
                 x_(x), y_(y), z_(z), w_(w)
         {
 
+        }
+
+        T& operator[] (size_t index)
+        {
+            assert(index < 4 && index >= 0);
+            return Values_[index];
+        }
+
+        const T& operator[] (size_t index) const
+        {
+            assert(index < 4 && index >= 0);
+            return Values_[index];
         }
 
         T getX() const
@@ -60,10 +74,12 @@ namespace FRMathDef
         }
 
     private:
-        T x_ = 0;
-        T y_ = 0;
-        T z_ = 0;
-        T w_ = 0;
+        T &x_ = Values_[0];
+        T &y_ = Values_[1];
+        T &z_ = Values_[2];
+        T &w_ = Values_[3];
+
+        std::array<T, 4> Values_;
     };
 }
 
